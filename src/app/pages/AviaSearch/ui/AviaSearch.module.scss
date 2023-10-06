@@ -1,0 +1,17 @@
+.inputContainer {
+  background-color: var(--first-color);
+  border-radius: 15px 15px 0 0;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0 0 15px 15px;
+  padding: 30px;
+  box-shadow: 0 0 14px 0 rgba(112, 121, 153, 0.30);
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 10px 30px;
+}

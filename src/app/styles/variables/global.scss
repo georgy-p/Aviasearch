@@ -1,0 +1,14 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --content-width: 1000px;
+    --container-offset: 15px;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+    // Font colors
+    --first-color: #5C87DB;
+    --second-color: #8BA5D8;
+    --dark-grey: #5C5C5C;
+    --light-grey: #B7BAC1;
+    --light-blue: #DDE3EE;
+    --offset: 20px;
+}
