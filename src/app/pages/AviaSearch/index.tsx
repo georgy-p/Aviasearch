@@ -1,3 +1,3 @@
-import { AviaSearch } from 'app/pages/AviaSearch/ui/AviaSearch';
+import { AviaSearch } from './ui/AviaSearch';
 
 export { AviaSearch };
