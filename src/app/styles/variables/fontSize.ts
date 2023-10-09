@@ -1,10 +1,10 @@
-interface FontSizes {
+interface FontSize {
     [key: string]: string;
 }
 
-export const fontSize: FontSizes = {
-    fontSizeRegular: '14px',
-    fontSizePrice: '32px',
-    fontSizeTime: '24px',
-    fontSizeAccent: '18px',
+export const fontSize: FontSize = {
+    regular: '14px',
+    price: '32px',
+    time: '24px',
+    accent: '18px',
 };
