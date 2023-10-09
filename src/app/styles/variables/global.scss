@@ -4,6 +4,12 @@
     --container-offset: 15px;
     --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
+    // Font sizes
+    --fontSizeRegular: '14px';
+    --fontSizePrice: '32px';
+    --fontSizeTime: '24px';
+    --fontSizeAccent: '18px';
+
     // Font colors
     --first-color: #5C87DB;
     --second-color: #8BA5D8;
