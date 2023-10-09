@@ -5,12 +5,12 @@ import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import 'dayjs/locale/ru';
 import { ruRU } from '@mui/x-date-pickers/locales';
-import { CityInput } from 'app/pages/AviaSearch/components/CityInput/CityInput';
 import cls from './AviaSearch.module.scss';
 import { DateInput } from 'app/pages/AviaSearch/components/DateInput';
 import { useDispatch } from 'react-redux';
 import { addData } from 'app/slices/searchSlice';
 import { useNavigate } from 'react-router-dom';
+import { CityInput } from 'app/pages/AviaSearch/components/CityInput';
 
 const ruLocale =
     ruRU.components.MuiLocalizationProvider.defaultProps.localeText;
@@ -37,11 +37,11 @@ export const AviaSearch = () => {
     };
 
     const inputsCheck = () => {
-        const result =
+        return (
             departureValue.trim() === '' ||
             arrivalValue.trim() === '' ||
-            firstFlightDate === null;
-        return result;
+            firstFlightDate === null
+        );
     };
 
     const handleClick = () => {
