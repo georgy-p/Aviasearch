@@ -1,15 +1,14 @@
 import cls from './OWCard.module.scss';
-import { Box } from '@mui/material';
-import { LeftSide } from 'app/pages/AviaInfo/components/shared/LeftSide';
-import { RightSide } from 'app/pages/AviaInfo/components/shared/RightSide';
-import { MainSide } from 'app/pages/AviaInfo/components/shared/MainSide';
+import { LeftSide } from 'widgets/cardComponents/LeftSide';
+import { RightSide } from 'widgets/cardComponents/RightSide';
+import { MainSide } from 'widgets/cardComponents/MainSide';
 
 export const OWCard = () => {
     return (
-        <Box className={cls.OWCard}>
+        <div className={cls.OWCard}>
             <LeftSide />
             <MainSide />
             <RightSide />
-        </Box>
+        </div>
     );
 };
