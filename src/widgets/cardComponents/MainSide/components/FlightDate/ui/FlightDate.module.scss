@@ -1,0 +1,25 @@
+.FlightDate {
+  padding-left: 25px;
+    padding-top: 40px;
+    padding-right: 35px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    color: var(--dark-grey);
+    gap: 8px;
+}
+
+.time {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #232323;
+}
+
+.text {
+  margin: 0;
+}
+
+.city {
+  font-weight: 600;
+}
