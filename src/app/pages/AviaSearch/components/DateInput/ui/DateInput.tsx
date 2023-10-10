@@ -46,6 +46,7 @@ export const DateInput = ({
                 <Typography variant='h6'>{name}</Typography>
                 <DatePicker
                     sx={datePickerStyle}
+                    label='дд.мм.гг'
                     slotProps={{
                         textField: {
                             InputLabelProps: { shrink: false },
