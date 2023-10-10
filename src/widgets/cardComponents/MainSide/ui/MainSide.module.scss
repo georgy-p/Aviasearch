@@ -1,0 +1,15 @@
+.mainSide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.times {
+    padding-left: 25px;
+    padding-top: 25px;
+}
