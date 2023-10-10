@@ -1,4 +1,4 @@
-import { Box, Button, Grid } from '@mui/material';
+import { Button, Grid } from '@mui/material';
 import { useState } from 'react';
 import { Dayjs } from 'dayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers';
@@ -63,13 +63,13 @@ export const AviaSearch = () => {
     };
 
     return (
-        <Box>
+        <div>
             <LocalizationProvider
                 dateAdapter={AdapterDayjs}
                 adapterLocale='ru'
                 localeText={ruLocale}
             >
-                <Box className={cls.inputContainer}>
+                <div className={cls.inputContainer}>
                     <Grid container spacing={2} sx={{ padding: '30px' }}>
                         <CityInput
                             name={'Откуда'}
@@ -100,9 +100,9 @@ export const AviaSearch = () => {
                             isSecondFlight={true}
                         />
                     </Grid>
-                </Box>
+                </div>
             </LocalizationProvider>
-            <Box className={cls.btnContainer}>
+            <div className={cls.btnContainer}>
                 <Button
                     disabled={inputsCheck()}
                     variant='contained'
@@ -111,7 +111,7 @@ export const AviaSearch = () => {
                 >
                     Найти билеты
                 </Button>
-            </Box>
-        </Box>
+            </div>
+        </div>
     );
 };
