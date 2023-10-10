@@ -24,6 +24,7 @@ export const theme = createTheme(
             h5: {
                 fontSize: 12,
                 color: 'white',
+                fontWeight: 600,
             },
         },
     },
