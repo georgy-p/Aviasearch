@@ -11,8 +11,7 @@ export const AviaInfo = () => {
         const isBack = useSelector(
             (state: RootState) => state.search.dates.back,
         );
-        const currentCard = isBack === null ? <OWCard /> : <RTCard />;
-        return currentCard;
+        return isBack === null ? <OWCard /> : <RTCard />;
     };
 
     return (
