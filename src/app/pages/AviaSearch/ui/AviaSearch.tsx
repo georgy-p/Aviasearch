@@ -51,8 +51,8 @@ export const AviaSearch = () => {
                 to: arrivalValue,
             },
             dates: {
-                from: firstFlightDate.format('L'),
-                to:
+                there: firstFlightDate.format('L'),
+                back:
                     secondFlightDate === null
                         ? null
                         : secondFlightDate.format('L'),
