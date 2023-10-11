@@ -6,8 +6,8 @@ export interface SearchState {
         to: string;
     };
     dates: {
-        from: string | null;
-        to: string | null;
+        there: string | null;
+        back: string | null;
     };
 }
 
@@ -17,8 +17,8 @@ const initialState: SearchState = {
         to: '',
     },
     dates: {
-        from: null,
-        to: null,
+        there: null,
+        back: null,
     },
 };
 
