@@ -5,7 +5,7 @@ export interface flightTimeInterface {
     arrive: string;
 }
 
-const fakeTimes: flightTimeInterface[] = [
+const fakeTimes1: flightTimeInterface[] = [
     {
         departure: '09:20',
         arrive: '11:05',
@@ -20,35 +20,52 @@ const fakeTimes: flightTimeInterface[] = [
     },
 ];
 
+const fakeTimes2: flightTimeInterface[] = [
+    {
+        departure: '11:50',
+        arrive: '13:30',
+    },
+    {
+        departure: '15:45',
+        arrive: '17:20',
+    },
+    {
+        departure: '17:10',
+        arrive: '19:35',
+    },
+];
+
 interface initialStateInterface {
     times: {
-        towards: flightTimeInterface[];
+        there: flightTimeInterface[];
         back: flightTimeInterface[] | null;
     };
     selected: {
-        towards: flightTimeInterface | null;
+        there: flightTimeInterface | null;
         back: flightTimeInterface | null;
     };
+    price: string;
 }
 
 const initialState: initialStateInterface = {
     times: {
-        towards: fakeTimes,
-        back: fakeTimes,
+        there: fakeTimes1,
+        back: fakeTimes2,
     },
     selected: {
-        towards: fakeTimes[0],
-        back: null,
+        there: fakeTimes1[0],
+        back: fakeTimes2[0],
     },
+    price: '8 300 ₽',
 };
 
 const flightInfoSlice = createSlice({
     name: 'flightInfo',
     initialState,
     reducers: {
-        selectTowards: (state, action: PayloadAction<flightTimeInterface>) => {
+        selectThere: (state, action: PayloadAction<flightTimeInterface>) => {
             const { payload } = action;
-            state.selected.towards = payload;
+            state.selected.there = payload;
         },
         selectBack: (state, action: PayloadAction<flightTimeInterface>) => {
             const { payload } = action;
@@ -57,5 +74,5 @@ const flightInfoSlice = createSlice({
     },
 });
 
-export const { selectTowards } = flightInfoSlice.actions;
+export const { selectThere, selectBack } = flightInfoSlice.actions;
 export default flightInfoSlice.reducer;
