@@ -4,4 +4,8 @@
   border-radius: 15px;
   box-shadow: 0 0 14px 0 rgba(112, 121, 153, 0.30);
   max-width: 980px;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 }

@@ -6,4 +6,11 @@
     justify-content: center;
     font-size: var(--font-size-price);
     font-weight: 700;
+
+    @media (max-width: 640px) {
+        font-size: var(--font-size-time);
+        justify-content: flex-end;
+        padding-right: var(--offset);
+        padding-bottom: var(--offset);
+    }
 }

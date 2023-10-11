@@ -6,7 +6,11 @@
   height: 55px;
   padding-top: 32px;
   flex-direction: column;
-  color: var(--light-grey)
+  color: var(--light-grey);
+  
+  @media (max-width: 895px) {
+    display: none;
+  }
 }
 
 .route {

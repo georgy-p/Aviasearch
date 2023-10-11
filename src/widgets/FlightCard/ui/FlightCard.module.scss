@@ -2,5 +2,12 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-    height: 200px;
+    height: 100%;
+
+    @media (max-width: 580px) {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        height: 100%;
+        padding-bottom: 25px;
+    }
 }
