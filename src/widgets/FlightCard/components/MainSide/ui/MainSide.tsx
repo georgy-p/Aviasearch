@@ -1,4 +1,5 @@
 import cls from './MainSide.module.scss';
+import cn from 'classnames';
 import { FlightDate } from 'widgets/FlightCard/components/MainSide/components/FlightDate';
 import { FlightRoute } from 'widgets/FlightCard/components/MainSide/components/FlightRoute';
 import { LuggagesLogo } from 'widgets/FlightCard/components/MainSide/components/LuggagesLogo';
@@ -16,19 +17,14 @@ export const MainSide = ({ isBack }: MainSideInterface) => {
     const departureCity = cities.from;
     const arriveCity = cities.to;
 
-    const dottedLineStyle = isBack
-        ? {
-            borderTop: 'dotted',
-            borderTopColor: '#5C87DB',
-        }
-        : null;
+    const isDotted = isBack ? cls.dotted : null;
 
     const times = useSelectedTimes(isBack);
     const departureTime = times.departure;
     const arriveTime = times.arrive;
 
     return (
-        <div style={dottedLineStyle} className={cls.mainSide}>
+        <div className={`${cls.mainSide} ${isDotted}`}>
             <div className={cls.info}>
                 <FlightDate
                     city={departureCity}
