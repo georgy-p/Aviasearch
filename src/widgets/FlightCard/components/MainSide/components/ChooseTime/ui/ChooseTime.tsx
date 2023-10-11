@@ -1,6 +1,5 @@
 import cls from './ChooseTime.module.scss';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from 'app/slices';
+import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import {
     flightTimeInterface,
