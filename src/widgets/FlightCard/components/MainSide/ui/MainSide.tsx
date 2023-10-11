@@ -3,12 +3,9 @@ import { FlightDate } from 'widgets/FlightCard/components/MainSide/components/Fl
 import { FlightRoute } from 'widgets/FlightCard/components/MainSide/components/FlightRoute';
 import { LuggagesLogo } from 'widgets/FlightCard/components/MainSide/components/LuggagesLogo';
 import { ChooseTime } from 'widgets/FlightCard/components/MainSide/components/ChooseTime';
-import { useSelector } from 'react-redux';
-import { RootState } from 'app/slices';
 import useCities from 'shared/hooks/useCities';
 import useDate from 'shared/hooks/useDate';
-import useTimes from 'shared/hooks/useSelectedTimes';
-import useSeletedTimes from 'shared/hooks/useSelectedTimes';
+import useSelectedTimes from 'shared/hooks/useSelectedTimes';
 
 interface MainSideInterface {
     isBack: boolean;
@@ -21,12 +18,12 @@ export const MainSide = ({ isBack }: MainSideInterface) => {
 
     const dottedLineStyle = isBack
         ? {
-              borderTop: 'dotted',
-              borderTopColor: '#5C87DB',
+            borderTop: 'dotted',
+            borderTopColor: '#5C87DB',
         }
         : null;
 
-    const times = useSeletedTimes(isBack);
+    const times = useSelectedTimes(isBack);
     const departureTime = times.departure;
     const arriveTime = times.arrive;
 
