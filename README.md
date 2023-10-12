@@ -8,15 +8,15 @@ Aviasearch - это веб-приложение в упрощенной форм
 
 Первая страница /avia - главный экран с возможностью выбора направления перелетов и даты: только туда или туда и обратно.
 
-![Снимок экрана 2023-10-11 в 20.28.09.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F7m%2Fjs8n0x3d2g9_2m0_16xv_p800000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_0azuMz%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-11%20%D0%B2%2020.28.09.png)
+<img width="500" alt="Главный экран" src="https://github.com/georgy-p/Aviasearch/assets/81578359/1ba9b2fc-74cf-49f3-a6cf-2bbe18149869">
 
 Вторая страница /avia/info - дает возможность выбора времени вылета. Если была выбрана только дата туда, то страница даст возможность выбора рейсов в одном направлении. 
 
-![Снимок экрана 2023-10-11 в 20.26.19.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F7m%2Fjs8n0x3d2g9_2m0_16xv_p800000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_nj6il4%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-11%20%D0%B2%2020.26.19.png)
+<img width="500" alt="Страница выбора рейса в одном направлении" src="https://github.com/georgy-p/Aviasearch/assets/81578359/ae975a07-9417-4328-aac3-8b8a3cee9e59">
 
 Если есть обратная дата, то приложение предложить выбрать время в оба направления.
 
-![Снимок экрана 2023-10-11 в 20.20.00.png](..%2F..%2F..%2F..%2Fvar%2Ffolders%2F7m%2Fjs8n0x3d2g9_2m0_16xv_p800000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_F9ww4M%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-10-11%20%D0%B2%2020.20.00.png)
+<img width="500" alt="Страница выбора рейса в оба направления" src="https://github.com/georgy-p/Aviasearch/assets/81578359/264e635f-a7d9-4a3f-b46a-4b614fbe7a47">
 
 ## Как установить и запустить
 1. Клонируйте репозиторий к себе на компьютер или скачайте .zip файл.
