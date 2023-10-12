@@ -1,51 +1,51 @@
 .FlightRoute {
-  display: flex;
-  min-width: 200px;
-  max-width: 297px;
-  width: 100%;
-  height: 55px;
-  padding-top: 32px;
-  flex-direction: column;
-  color: var(--light-grey);
+    display: flex;
+    width: 100%;
+    min-width: 200px;
+    max-width: 297px;
+    height: 55px;
+    flex-direction: column;
+    padding-top: 32px;
+    color: var(--light-grey);
   
-  @media (max-width: 895px) {
-    display: none;
-  }
+    @media (width <= 895px) {
+        display: none;
+    }
 }
 
 .route {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .cityBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
 
-  & p {
-    margin: 0;
-  }
+    & p {
+        margin: 0;
+    }
 }
 
 .schema {
-  display: flex;
-  align-items: center;
-  padding-top: 4px;
-  padding-left: 9px;
-  padding-right: 9px;
-  width: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-top: 4px;
+    padding-right: 9px;
+    padding-left: 9px;
 }
 
 .line {
-  width: 100%;
-  border-top: solid 1px;
+    width: 100%;
+    border-top: solid 1px;
 }
 
 .routeTime {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }

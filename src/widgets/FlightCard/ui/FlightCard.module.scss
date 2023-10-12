@@ -1,13 +1,13 @@
 .FlightCard {
     display: flex;
     width: 100%;
-    flex-direction: row;
     height: 100%;
+    flex-direction: row;
 
-    @media (max-width: 580px) {
+    @media (width <= 580px) {
+        height: 100%;
         flex-wrap: wrap;
         align-items: flex-start;
-        height: 100%;
         padding-bottom: 25px;
     }
 }
