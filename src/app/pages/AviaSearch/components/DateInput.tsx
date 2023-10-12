@@ -2,7 +2,6 @@ import { Box, Grid, Typography } from '@mui/material';
 import { DatePicker } from '@mui/x-date-pickers';
 import { Dayjs } from 'dayjs';
 import { useState } from 'react';
-import CalendarIcon from '/shared/assets/icons/calendar.svg';
 
 interface DateInputProps {
     name: string;
