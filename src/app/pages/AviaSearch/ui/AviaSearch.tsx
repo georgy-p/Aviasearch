@@ -15,6 +15,8 @@ import { CityInput } from 'app/pages/AviaSearch/components/CityInput';
 const ruLocale =
     ruRU.components.MuiLocalizationProvider.defaultProps.localeText;
 
+type inputValueType = string | Dayjs | null;
+
 export const AviaSearch = () => {
     const [departureValue, setDepartureValue] = useState<string>('');
     const [arrivalValue, setArrivalValue] = useState<string>('');
@@ -25,7 +27,6 @@ export const AviaSearch = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    type inputValueType = string | Dayjs | null;
     const handleBlur = (
         inputValue: inputValueType,
         isSecondFlight: boolean = false,
