@@ -7,16 +7,11 @@ import { RootState } from 'app/slices';
 
 export const AviaInfo = () => {
     const price = useSelector((state: RootState) => state.flightInfo.price);
-    const renderedCard = () => {
-        const isBack = useSelector(
-            (state: RootState) => state.search.dates.back,
-        );
-        return isBack === null ? <OWCard /> : <RTCard />;
-    };
+    const isBack = useSelector((state: RootState) => state.search.dates.back);
 
     return (
         <div className={cls.AviaInfo}>
-            {renderedCard()}
+            {isBack === null ? <OWCard /> : <RTCard />}
             <PriceSide price={price} />
         </div>
     );
